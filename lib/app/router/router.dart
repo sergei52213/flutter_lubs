@@ -19,5 +19,15 @@ final router = GoRouter(
         child: const HomeScreen(),
       ),
     ),
+    GoRoute(
+      path: '/detail/:id',
+      pageBuilder: (context, state) {
+        final id = int.tryParse(state.pathParameters['id'] ?? '') ?? 1;
+        return MaterialPage(
+          key: state.pageKey,
+          child: DetailScreen(id: id),
+        );
+      },
+    ),
   ],
 );

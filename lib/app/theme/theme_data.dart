@@ -20,6 +20,7 @@ class AppTheme {
     elevation: 0,
     scrolledUnderElevation: 0,
     centerTitle: true,
+    foregroundColor: ThemeColors.white,
     titleTextStyle: const TextStyle(
       fontSize: 20,
       fontWeight: FontWeight.bold,
